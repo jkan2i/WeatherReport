@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Your Results</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+	    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<h3>Weather in <u>{{ location }}</u></h3>                
+                <h2>Current temperature: {{ temp }}° C</h2>
+                <h2>{{ weather }}</h2>
+                <h2>Feels like: {{ feels_like }}° C</h2>
+
+			</div>
+		</div>
+		
+	</body>
+</html>
